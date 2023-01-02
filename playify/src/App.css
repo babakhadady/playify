@@ -1,0 +1,19 @@
+.main-container {
+  place-items: center center;
+  background-color: #121212;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  flex-direction: column;
+
+}
+
+.header {
+  font-size: 75px;
+}
+
+.flexbox {
+  flex-direction: row;
+  display: flex;
+}
+

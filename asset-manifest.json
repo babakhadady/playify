@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/playify/static/css/main.0af5ff2a.css",
+    "main.js": "/playify/static/js/main.4b420826.js",
+    "static/js/787.0f17b5c8.chunk.js": "/playify/static/js/787.0f17b5c8.chunk.js",
+    "index.html": "/playify/index.html",
+    "main.0af5ff2a.css.map": "/playify/static/css/main.0af5ff2a.css.map",
+    "main.4b420826.js.map": "/playify/static/js/main.4b420826.js.map",
+    "787.0f17b5c8.chunk.js.map": "/playify/static/js/787.0f17b5c8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0af5ff2a.css",
+    "static/js/main.4b420826.js"
+  ]
+}

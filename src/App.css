@@ -5,9 +5,13 @@
   height: 100vh;
   color: white;
   flex-direction: column;
-
+  height: 100%;
 }
 
+* {
+  background-color: #121212;
+  
+}
 .header {
   font-size: 75px;
 }
@@ -17,3 +21,8 @@
   display: flex;
 }
 
+
+
+.flex-dir {
+  flex-direction: column;
+}

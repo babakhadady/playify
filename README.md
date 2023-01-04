@@ -2,8 +2,6 @@
 
 Create Spotify playlists curated to you
 
-## Built With
-
 Built in React with a Node.js and express backend, using Spotify API with OAuth2 authentication
 
 ***** Spotify Api only allows authenticated users for apps in Developer Mode. Playify is not functional for the general public

@@ -5,6 +5,7 @@ require('dotenv').config();
 
 const app = express()
 
+
 const redirect_uri = process.env.REDIRECT_URI || 'http://localhost:8888/callback'
 const uri = process.env.FRONT_END_URI || 'http://localhost:3000'
 
@@ -20,10 +21,6 @@ app.get('/authorization', function (req, res) {
         response_type: 'code',
         show_dialog: true,
     }
-
-    
-
-    
     res.redirect('https://accounts.spotify.com/authorize?' + querystring.stringify(authParam));
 })
 

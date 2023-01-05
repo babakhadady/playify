@@ -10,8 +10,9 @@
 
 * {
   background-color: #121212;
-  
+
 }
+
 .header {
   font-size: 75px;
 }
@@ -20,8 +21,6 @@
   flex-direction: row;
   display: flex;
 }
-
-
 
 .flex-dir {
   flex-direction: column;

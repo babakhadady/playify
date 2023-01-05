@@ -60,7 +60,6 @@ function Playlist({ stateChanger, artists, token, loggedIn }) {
         }).then(response => response.json()).then(data => {
             console.log(data)
         });
-
     }
 
     const searchPar = {
@@ -72,12 +71,9 @@ function Playlist({ stateChanger, artists, token, loggedIn }) {
         },
     }
 
-
-
     useEffect(() => {
         if (artistObjects.length === artists.length) {
             if (started) return;
-
             setStarted(true);
             console.log("STARTED TRACKS")
             artistObjects.forEach((a, index) => {
@@ -85,8 +81,6 @@ function Playlist({ stateChanger, artists, token, loggedIn }) {
                 grabTracks(a)
             })
         }
-
-
     }, [artistObjects])
 
     useEffect(() => {
@@ -95,15 +89,10 @@ function Playlist({ stateChanger, artists, token, loggedIn }) {
         artists.map((a, index) => {
             grabArtist(a)
         })
-
     }, [])
 
     // api call to grab artists id for each artist
-
-
-
     async function grabArtist(artist) {
-
         fetch('https://api.spotify.com/v1/search?q=' + artist + '&type=artist', searchPar)
             .then(response => response.json()).then(data => {
                 let temp = data.artists.items[0]
@@ -151,20 +140,14 @@ function Playlist({ stateChanger, artists, token, loggedIn }) {
                             <ListGroup className='mb-5'>
                                 {displayArtists}
                             </ListGroup>
-
-
-
                             <p className='mb-3'>
                                 Selected Tracks:
                             </p>
                             <ListGroup className="mb-5">
                                 {displayTracks}
                             </ListGroup>
-
                         </div>
-
                     </Col>
-
                     <Col>
                         <div>
                             <div className='form-container mt-5'>
@@ -186,9 +169,7 @@ function Playlist({ stateChanger, artists, token, loggedIn }) {
                                     <Col>
                                         {(playlist === undefined) ? <Button className="mb-3" variant="success" onClick={() => createPlaylist()}> Generate Playlist</Button>
                                             : <Button className="mb-3" variant="success" href={playlist.external_urls.spotify}>View Playlist</Button>}
-
                                     </Col>
-
                                     <Col>
                                         <Button variant="danger" onClick={() => stateChanger(true)}>Return to Search</Button>
                                     </Col>

@@ -16,7 +16,7 @@ function Search({ stateChanger, artists, setArtists, setToken, setLoggedIn, logg
         const params = queryString.parse(window.location.search);
         const token = params.token;
         console.log(params.token);
-        history('/');
+        history('/playify/');
 
         if (token) {
             setToken(token);
@@ -42,7 +42,7 @@ function Search({ stateChanger, artists, setArtists, setToken, setLoggedIn, logg
 
     // spotify login
     function login() {
-        window.location = ('http://localhost:8888/authorization');
+        window.location = ('https://playify.onrender.com/authorization');
     }
 
     const addArtist = (event) => {

@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/playify/static/css/main.0af5ff2a.css",
-    "main.js": "/playify/static/js/main.ee45bc2b.js",
+    "main.js": "/playify/static/js/main.d7fc1cbf.js",
     "static/js/787.0f17b5c8.chunk.js": "/playify/static/js/787.0f17b5c8.chunk.js",
     "index.html": "/playify/index.html",
     "main.0af5ff2a.css.map": "/playify/static/css/main.0af5ff2a.css.map",
-    "main.ee45bc2b.js.map": "/playify/static/js/main.ee45bc2b.js.map",
+    "main.d7fc1cbf.js.map": "/playify/static/js/main.d7fc1cbf.js.map",
     "787.0f17b5c8.chunk.js.map": "/playify/static/js/787.0f17b5c8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0af5ff2a.css",
-    "static/js/main.ee45bc2b.js"
+    "static/js/main.d7fc1cbf.js"
   ]
 }

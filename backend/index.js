@@ -11,7 +11,6 @@ const uri = process.env.FRONT_END_URI || 'http://localhost:3000'
 
 // request authorization code
 app.get('/authorization', function (req, res) {
-
     const authParam = {
         url: 'https://accounts.spotify.com/authorize?',
         method: 'GET',
@@ -26,9 +25,8 @@ app.get('/authorization', function (req, res) {
 
 // retrieve access token from authorization code
 app.get('/callback', function (req, res) {
-    let code = req.query.code || null
-    let accessParam = {
-
+    const code = req.query.code || null
+    const accessParam = {
         method: 'post',
         url: 'https://accounts.spotify.com/api/token',
         params: {
@@ -48,6 +46,6 @@ app.get('/callback', function (req, res) {
 
 })
 
-let port = process.env.PORT || 8888
+const port = process.env.PORT || 8888
 console.log(`Listening on port ${port}. Go /authorization to initiate authentication flow.`)
 app.listen(port)
